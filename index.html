@@ -28,6 +28,8 @@
             color: #696969;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="markdown-loader.js"></script>
 </head>
 <body>
     <h1>The Scholar's Odyssey</h1>
@@ -56,5 +58,10 @@
         <h2>Future Explorations</h2>
         <p>Topics to delve into on the morrow...</p>
     </div>
+
+    <div id="markdown-content" class="parchment"></div>
+    <script>
+        loadMarkdownContent('Markdown_version/CPI1_Semestre1.md', 'markdown-content');
+    </script>
 </body>
 </html>
